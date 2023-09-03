@@ -58,7 +58,7 @@ dockitems_persist:
   path: "/Applications/Spotify.app/"
   position: 8
 - name: "Adobe Lightroom Classic"
-  path: "/Applications/Adobe Lightroom Classic.app/"
+  path: "/Applications/Adobe\ Lightroom\ Classic/Adobe\ Lightroom\ Classic.app/"
   position: 9
 
 configure_dotfiles: true
