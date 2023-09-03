@@ -1,6 +1,4 @@
-configure_dotfiles: false
 configure_terminal: false
-configure_osx: false
 
 homebrew_installed_packages:
 - git
@@ -59,3 +57,16 @@ dockitems_persist:
   path: "/Applications/Adobe Lightroom Classic.app/"
   position: 9
 
+configure_dotfiles: true
+dotfiles_repo: https://github.com/strangiato/dotfiles.git
+dotfiles_repo_version: strangiato
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/code/dotfiles
+dotfiles_files:
+  # - .zshrc
+  - .gitignore
+  # - .inputrc
+  - .osx
+  - .vimrc
+
+configure_osx: true
