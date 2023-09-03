@@ -24,6 +24,9 @@ pip_packages:
 - name: poetry
 - name: black
 
+default_python: python3.11
+python_path_location: "/usr/local/bin"
+
 configure_dock: true
 dockitems_remove:
 - Launchpad
@@ -70,3 +73,6 @@ dotfiles_files:
   - .vimrc
 
 configure_osx: true
+
+post_provision_tasks:
+  - default-python.yml

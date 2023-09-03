@@ -1,0 +1,18 @@
+---
+- name: Get the path to preferred python default
+  ansible.builtin.command: "which {{ default_python }}"
+  register: default_python_path
+
+- name: Create python link
+  ansible.builtin.file: 
+    src: "{{ default_python_path }}"
+    dest: "/usr/local/bin/python"
+    state: link
+    force: true
+
+- name: Create python3 link
+  ansible.builtin.file: 
+    src: "{{ default_python_path }}"
+    dest: "/usr/local/bin/python3"
+    state: link
+    force: true
