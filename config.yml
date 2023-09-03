@@ -52,7 +52,7 @@ dockitems_persist:
   path: "/Applications/Visual Studio Code.app/"
   position: 6
 - name: "Steam"
-  path: "/Applications/Steam/"
+  path: "/Applications/Steam.app/"
   position: 7
 - name: "Spotify"
   path: "/Applications/Spotify.app/"
