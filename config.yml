@@ -1,0 +1,61 @@
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+
+homebrew_installed_packages:
+- git
+- starship
+- python@3.11
+- helm
+- kustomize
+- podman
+- openshift-cli
+
+homebrew_cask_apps:
+- firefox
+- google-chrome
+- bitwarden
+- vlc
+- steam
+- iterm2
+- visual-studio-code
+- spotify
+
+pip_packages:
+- name: pipenv
+- name: poetry
+- name: black
+
+configure_dock: true
+dockitems_remove:
+- Launchpad
+- TV
+- Music
+- Podcasts
+- News
+- Photos
+- Freeform
+
+dockitems_persist:
+- name: "iTerm"
+  path: "/Applications/iTerm.app/"
+  position: 2
+- name: "Firefox"
+  path: "/Applications/Firefox.app/"
+  position: 4
+- name: "Google Chrome"
+  path: "/Applications/Google Chrome.app/"
+  position: 5
+- name: "Visual Studio Code"
+  path: "/Applications/Visual Studio Code.app/"
+  position: 6
+- name: "Steam"
+  path: "/Applications/Steam/"
+  position: 7
+- name: "Spotify"
+  path: "/Applications/Spotify.app/"
+  position: 8
+- name: "Adobe Lightroom Classic"
+  path: "/Applications/Adobe Lightroom Classic.app/"
+  position: 9
+
