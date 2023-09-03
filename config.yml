@@ -12,11 +12,13 @@ homebrew_installed_packages:
 homebrew_cask_apps:
 - firefox
 - google-chrome
+- google-drive
 - bitwarden
 - vlc
 - steam
 - iterm2
 - visual-studio-code
+- podman-desktop
 - spotify
 
 pip_packages:
