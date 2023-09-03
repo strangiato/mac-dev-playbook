@@ -1,6 +1,6 @@
 ---
 - name: Get the path to preferred python default
-  ansible.builtin.command: "which {{ default_python }}"
+  ansible.builtin.command: "which python{{ default_python_version }}"
   register: default_python_path
 
 - name: Create python link
@@ -14,5 +14,16 @@
   ansible.builtin.file: 
     src: "{{ default_python_path }}"
     dest: "/usr/local/bin/python3"
+    state: link
+    force: true
+
+- name: Get the path to preferred pip default
+  ansible.builtin.command: "which pip{{ default_python_version }}"
+  register: default_pip_path
+
+- name: Create python link
+  ansible.builtin.file:
+    src: "{{ default_pip_path }}"
+    dest: "/usr/local/bin/pip"
     state: link
     force: true

@@ -24,8 +24,7 @@ pip_packages:
 - name: poetry
 - name: black
 
-default_python: python3.11
-python_path_location: "/usr/local/bin"
+default_python_version: 3.11
 
 configure_dock: true
 dockitems_remove:
