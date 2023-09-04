@@ -46,7 +46,7 @@ homebrew_cask_apps:
 - font-fira-mono-nerd-font
 - font-lekton-nerd-font
 - font-sauce-code-pro-nerd-font
-- font-aurulent-sans-mono-nerd-font
+# - font-aurulent-sans-mono-nerd-font
 - font-go-mono-nerd-font
 - font-liberation-nerd-font
 - font-shure-tech-mono-nerd-font
