@@ -1,0 +1,9 @@
+---
+- name: Create ssh key folder
+  ansible.builtin.file:
+    path: "{{ sshkey_path }}"
+    state: directory
+
+- name: Generate an OpenSSH keypair with the default values (4096 bits, rsa)
+  community.crypto.openssh_keypair:
+    path: "{{ sshkey_path }}/id_rsa"
