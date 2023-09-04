@@ -5,14 +5,14 @@
 
 - name: Create python link
   ansible.builtin.file: 
-    src: "{{ default_python_path }}"
+    src: "/usr/local/bin/python3.11"
     dest: "/usr/local/bin/python"
     state: link
     force: true
 
 - name: Create python3 link
   ansible.builtin.file: 
-    src: "{{ default_python_path }}"
+    src: "/usr/local/bin/python3.11"
     dest: "/usr/local/bin/python3"
     state: link
     force: true
@@ -23,7 +23,7 @@
 
 - name: Create python link
   ansible.builtin.file:
-    src: "{{ default_pip_path }}"
+    src: "/usr/local/bin/pip3.11"
     dest: "/usr/local/bin/pip"
     state: link
     force: true
