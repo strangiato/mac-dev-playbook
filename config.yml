@@ -6,84 +6,84 @@ homebrew_taps:
   - homebrew/cask-fonts
 
 homebrew_installed_packages:
-- git
-- starship
-- python@3.11
-- helm
-- kustomize
-- podman
-- openshift-cli
+  - git
+  - starship
+  - python@3.11
+  - helm
+  - kustomize
+  - podman
+  - openshift-cli
 
 homebrew_cask_apps:
-- firefox
-- google-chrome
-- google-drive
-- bitwarden
-- vlc
-- steam
-- iterm2
-- visual-studio-code
-- podman-desktop
-- spotify
-# nerd-font packages for starship
-- font-3270-nerd-font
-- font-droid-sans-mono-nerd-font
-- font-intone-mono-nerd-font
-- font-overpass-nerd-font
-- font-agave-nerd-font
-- font-envy-code-r-nerd-font
-- font-iosevka-nerd-font
-- font-profont-nerd-font
-- font-anonymice-nerd-font
-- font-fantasque-sans-mono-nerd-font
-- font-iosevka-term-nerd-font
-- font-proggy-clean-tt-nerd-font
-- font-arimo-nerd-font
-- font-fira-code-nerd-font
-- font-jetbrains-mono-nerd-font
-- font-roboto-mono-nerd-font
-- font-aurulent-nerd-font
-- font-fira-mono-nerd-font
-- font-lekton-nerd-font
-- font-sauce-code-pro-nerd-font
-# - font-aurulent-sans-mono-nerd-font
-- font-go-mono-nerd-font
-- font-liberation-nerd-font
-- font-shure-tech-mono-nerd-font
-- font-bigblue-terminal-nerd-font
-- font-gohufont-nerd-font
-- font-lilex-nerd-font
-- font-space-mono-nerd-font
-- font-bitstream-vera-sans-mono-nerd-font
-- font-hack-nerd-font
-- font-meslo-lg-nerd-font
-- font-symbols-only-nerd-font
-- font-blex-mono-nerd-font
-- font-hasklug-nerd-font
-- font-monocraft-nerd-font
-- font-terminess-ttf-nerd-font
-- font-caskaydia-cove-nerd-font
-- font-heavy-data-nerd-font
-- font-monofur-nerd-font
-- font-tinos-nerd-font
-- font-code-new-roman-nerd-font
-- font-hurmit-nerd-font
-- font-monoid-nerd-font
-- font-ubuntu-mono-nerd-font
-- font-comic-shanns-mono-nerd-font
-- font-im-writing-nerd-font
-- font-mononoki-nerd-font
-- font-ubuntu-nerd-font
-- font-cousine-nerd-font
-- font-inconsolata-go-nerd-font
-- font-mplus-nerd-font
-- font-victor-mono-nerd-font
-- font-daddy-time-mono-nerd-font
-- font-inconsolata-lgc-nerd-font
-- font-noto-nerd-font
-- font-dejavu-sans-mono-nerd-font
-- font-inconsolata-nerd-font
-- font-open-dyslexic-nerd-font
+  - firefox
+  - google-chrome
+  - google-drive
+  - bitwarden
+  - vlc
+  - steam
+  - iterm2
+  - visual-studio-code
+  - podman-desktop
+  - spotify
+  # nerd-font packages for starship
+  - font-3270-nerd-font
+  - font-droid-sans-mono-nerd-font
+  - font-intone-mono-nerd-font
+  - font-overpass-nerd-font
+  - font-agave-nerd-font
+  - font-envy-code-r-nerd-font
+  - font-iosevka-nerd-font
+  - font-profont-nerd-font
+  - font-anonymice-nerd-font
+  - font-fantasque-sans-mono-nerd-font
+  - font-iosevka-term-nerd-font
+  - font-proggy-clean-tt-nerd-font
+  - font-arimo-nerd-font
+  - font-fira-code-nerd-font
+  - font-jetbrains-mono-nerd-font
+  - font-roboto-mono-nerd-font
+  - font-aurulent-nerd-font
+  - font-fira-mono-nerd-font
+  - font-lekton-nerd-font
+  - font-sauce-code-pro-nerd-font
+  # - font-aurulent-sans-mono-nerd-font
+  - font-go-mono-nerd-font
+  - font-liberation-nerd-font
+  - font-shure-tech-mono-nerd-font
+  - font-bigblue-terminal-nerd-font
+  - font-gohufont-nerd-font
+  - font-lilex-nerd-font
+  - font-space-mono-nerd-font
+  - font-bitstream-vera-sans-mono-nerd-font
+  - font-hack-nerd-font
+  - font-meslo-lg-nerd-font
+  - font-symbols-only-nerd-font
+  - font-blex-mono-nerd-font
+  - font-hasklug-nerd-font
+  - font-monocraft-nerd-font
+  - font-terminess-ttf-nerd-font
+  - font-caskaydia-cove-nerd-font
+  - font-heavy-data-nerd-font
+  - font-monofur-nerd-font
+  - font-tinos-nerd-font
+  - font-code-new-roman-nerd-font
+  - font-hurmit-nerd-font
+  - font-monoid-nerd-font
+  - font-ubuntu-mono-nerd-font
+  - font-comic-shanns-mono-nerd-font
+  - font-im-writing-nerd-font
+  - font-mononoki-nerd-font
+  - font-ubuntu-nerd-font
+  - font-cousine-nerd-font
+  - font-inconsolata-go-nerd-font
+  - font-mplus-nerd-font
+  - font-victor-mono-nerd-font
+  - font-daddy-time-mono-nerd-font
+  - font-inconsolata-lgc-nerd-font
+  - font-noto-nerd-font
+  - font-dejavu-sans-mono-nerd-font
+  - font-inconsolata-nerd-font
+  - font-open-dyslexic-nerd-font
 
 pip_packages:
 - name: pipenv
@@ -94,36 +94,36 @@ default_python_version: 3.11
 
 configure_dock: true
 dockitems_remove:
-- Launchpad
-- TV
-- Music
-- Podcasts
-- News
-- Photos
-- Freeform
+  - Launchpad
+  - TV
+  - Music
+  - Podcasts
+  - News
+  - Photos
+  - Freeform
 
 dockitems_persist:
-- name: "iTerm"
-  path: "/Applications/iTerm.app/"
-  position: 2
-- name: "Firefox"
-  path: "/Applications/Firefox.app/"
-  position: 4
-- name: "Google Chrome"
-  path: "/Applications/Google Chrome.app/"
-  position: 5
-- name: "Visual Studio Code"
-  path: "/Applications/Visual Studio Code.app/"
-  position: 6
-- name: "Steam"
-  path: "/Applications/Steam.app/"
-  position: 7
-- name: "Spotify"
-  path: "/Applications/Spotify.app/"
-  position: 8
-- name: "Adobe Lightroom Classic"
-  path: "/Applications/Adobe\ Lightroom\ Classic/Adobe\ Lightroom\ Classic.app/"
-  position: 9
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    position: 2
+  - name: "Firefox"
+    path: "/Applications/Firefox.app/"
+    position: 4
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    position: 5
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    position: 6
+  - name: "Steam"
+    path: "/Applications/Steam.app/"
+    position: 7
+  - name: "Spotify"
+    path: "/Applications/Spotify.app/"
+    position: 8
+  - name: "Adobe Lightroom Classic"
+    path: "/Applications/Adobe\ Lightroom\ Classic/Adobe\ Lightroom\ Classic.app/"
+    position: 9
 
 configure_dotfiles: true
 dotfiles_repo: git@github.com:strangiato/dotfiles.git
