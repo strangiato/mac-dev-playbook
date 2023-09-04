@@ -76,4 +76,4 @@ dotfiles_files:
 configure_osx: true
 
 post_provision_tasks:
-  - default-python.yml
+  - tasks/default-python.yml
