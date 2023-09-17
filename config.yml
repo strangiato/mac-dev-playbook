@@ -147,6 +147,11 @@ configure_osx: true
 
 sshkey_path: ~/.ssh/
 
+vscode_extension:
+  - ms-python.python
+  - ms-python.vscode-pylance
+
 post_provision_tasks:
+  - tasks/vscode-extensions.yml
   - tasks/default-python.yml
   - tasks/create-sshkey.yml
