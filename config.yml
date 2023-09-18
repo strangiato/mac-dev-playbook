@@ -153,6 +153,7 @@ sshkey_path: ~/.ssh/
 vscode_extension:
   - ms-python.python
   - ms-python.vscode-pylance
+  - streetsidesoftware.code-spell-checker
 
 post_provision_tasks:
   - tasks/vscode-extensions.yml
