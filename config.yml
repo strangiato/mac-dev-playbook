@@ -94,6 +94,9 @@ pip_packages:
 - name: poetry
 - name: black
 
+npm_packages: 
+- name: yarn
+
 default_python_version: 3.11
 
 configure_dock: true
