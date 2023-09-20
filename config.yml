@@ -90,12 +90,12 @@ homebrew_cask_apps:
   - font-open-dyslexic-nerd-font
 
 pip_packages:
-- name: pipenv
-- name: poetry
-- name: black
+  - name: pipenv
+  - name: poetry
+  - name: black
 
-npm_packages: 
-- name: yarn
+npm_packages:
+  - name: yarn
 
 default_python_version: 3.11
 
@@ -154,6 +154,7 @@ vscode_extension:
   - ms-python.python
   - ms-python.vscode-pylance
   - streetsidesoftware.code-spell-checker
+  - esbenp.prettier-vscode
 
 post_provision_tasks:
   - tasks/vscode-extensions.yml
