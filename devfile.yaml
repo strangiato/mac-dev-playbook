@@ -1,0 +1,22 @@
+schemaVersion: 2.2.0
+metadata:
+  name: ansible-demo
+components:
+  - name: tooling-container
+    container:
+      image: quay.io/devspaces/ansible-creator-ee@sha256:3ff5d2d5f17c9c1e4a352d9922e27be09641647ac028a56845aaab6f6e3c7958
+      memoryRequest: 256M
+      memoryLimit: 6Gi
+      cpuRequest: 250m
+      cpuLimit: 2000m
+      args: ['tail', '-f', '/dev/null']
+commands:
+  - id: install-collections
+    exec:
+      label: "Install collections"
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: '/usr/local/bin/ansible-galaxy install -r ${PROJECTS_ROOT}/requirements.yml'
+      component: tooling-container
+# events:
+#   postStart:
+#     - install-collections
