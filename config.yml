@@ -29,6 +29,7 @@ homebrew_cask_apps:
   - podman-desktop
   - spotify
   - postman
+  - balenaetcher
   # nerd-font packages for starship
   - font-3270-nerd-font
   - font-droid-sans-mono-nerd-font
