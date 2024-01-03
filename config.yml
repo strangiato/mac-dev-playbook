@@ -156,6 +156,7 @@ vscode_extension:
   - ms-python.vscode-pylance
   - streetsidesoftware.code-spell-checker
   - esbenp.prettier-vscode
+  - hediet.vscode-drawio
 
 post_provision_tasks:
   - tasks/vscode-extensions.yml
