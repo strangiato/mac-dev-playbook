@@ -1,35 +1,44 @@
 configure_terminal: false
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+#  - homebrew/core
+#  - homebrew/cask
   - homebrew/cask-fonts
 
 homebrew_installed_packages:
   - git
+  - watch
   - starship
   - bash-completion
   - zsh-autosuggestions
-  - python@3.11
+  - make
+  - pyenv
   - node
   - helm
   - kustomize
   - podman
   - openshift-cli
+  - awscli
 
 homebrew_cask_apps:
+  - brave-browser
   - firefox
   - google-chrome
   - google-drive
   - bitwarden
-  - vlc
   - steam
   - iterm2
   - visual-studio-code
   - podman-desktop
+  - scroll-reverser
   - spotify
   - postman
   - balenaetcher
+  - rectangle
+  - rambox
+  - slack
+  - zoom
+  - obs
   # nerd-font packages for starship
   - font-3270-nerd-font
   - font-droid-sans-mono-nerd-font
@@ -94,6 +103,7 @@ pip_packages:
   - name: pipenv
   - name: poetry
   - name: black
+  - name: ruff
 
 npm_packages:
   - name: yarn
@@ -123,21 +133,15 @@ dockitems_persist:
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
     position: 6
-  - name: "Steam"
-    path: "/Applications/Steam.app/"
-    position: 7
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
     position: 8
-  - name: "Adobe Lightroom Classic"
-    path: "/Applications/Adobe\ Lightroom\ Classic/Adobe\ Lightroom\ Classic.app/"
-    position: 9
 
 configure_dotfiles: true
 dotfiles_repo: git@github.com:strangiato/dotfiles.git
 dotfiles_repo_version: strangiato
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/code/dotfiles
+dotfiles_repo_local_destination: ~/code/strangiato/dotfiles
 dotfiles_files:
   - .aliases
   - .zshrc
@@ -157,8 +161,9 @@ vscode_extension:
   - streetsidesoftware.code-spell-checker
   - esbenp.prettier-vscode
   - hediet.vscode-drawio
+  - ms-vscode.makefile-tools
 
 post_provision_tasks:
   - tasks/vscode-extensions.yml
-  - tasks/default-python.yml
+  # - tasks/default-python.yml
   - tasks/create-sshkey.yml
