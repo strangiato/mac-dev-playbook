@@ -9,7 +9,7 @@ homebrew_installed_packages:
   - git
   - watch
   - starship
-  - bash-completion
+  - zsh-completion
   - zsh-autosuggestions
   - make
   - pyenv
