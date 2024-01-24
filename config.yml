@@ -18,6 +18,8 @@ homebrew_installed_packages:
   - kustomize
   - podman
   - openshift-cli
+  - jq
+  - yq
   - awscli
   - gpg2
   - gnupg
