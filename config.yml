@@ -149,6 +149,8 @@ dotfiles_repo_version: strangiato
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/code/strangiato/dotfiles
 dotfiles_files:
+  - .gnupg/gpg-agent.conf
+  - .gnupg/gpg.conf
   - .aliases
   - .zshrc
   - .gitignore
