@@ -19,6 +19,9 @@ homebrew_installed_packages:
   - podman
   - openshift-cli
   - awscli
+  - gpg2
+  - gnupg
+  - pinentry-mac
 
 homebrew_cask_apps:
   - brave-browser
