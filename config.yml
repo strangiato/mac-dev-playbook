@@ -8,6 +8,7 @@ homebrew_taps:
 homebrew_installed_packages:
   - git
   - watch
+  - tree
   - starship
   - zsh-completion
   - zsh-autosuggestions
