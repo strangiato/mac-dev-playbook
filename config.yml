@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - yq
   - awscli
   - azure-cli
+  - gh
   - gpg2
   - gnupg
   - pinentry-mac
