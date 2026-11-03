@@ -1,21 +1,25 @@
 configure_terminal: false
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - homebrew/cask-fonts
-
 homebrew_installed_packages:
   - git
+  - watch
+  - tree
+  - make
+  - jq
+  - yq
+  - gnupg
+  - ssh-copy-id
+  - pinentry-mac
   - starship
-  - bash-completion
+  - zsh-completion
   - zsh-autosuggestions
-  # - python@3.11
-  # - node
+  - uv
   - kubernetes-cli
   - krew
   - helm
   - kustomize
+  - opencode
+  # - node
   # - podman
   # - openshift-cli
 
@@ -28,15 +32,16 @@ homebrew_cask_apps:
   - steam
   - iterm2
   - visual-studio-code
-  # - podman-desktop
   - spotify
   - postman
   - balenaetcher
+  - opencode-desktop
   # nerd-font packages for starship
   - font-roboto-mono-nerd-font
   - font-jetbrains-mono-nerd-font
   - font-fira-code-nerd-font
   - font-fira-mono-nerd-font
+  # - podman-desktop
 
 # pip_packages:
 #   - name: pipenv
@@ -89,8 +94,10 @@ dotfiles_repo_local_destination: ~/code/strangiato/dotfiles
 dotfiles_files:
   - .aliases
   - .zshrc
+  - .zprofile
+  - .config/uv/.python-version
   - .gitignore
-  - .gitconfig
+  # - .gitconfig
   # - .inputrc
   - .osx
   - .vimrc
@@ -107,6 +114,6 @@ vscode_extension:
   - hediet.vscode-drawio
 
 post_provision_tasks:
-  - tasks/vscode-extensions.yml
+  # - tasks/vscode-extensions.yml
   # - tasks/default-python.yml
   # - tasks/create-sshkey.yml
