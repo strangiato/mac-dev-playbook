@@ -24,18 +24,19 @@ homebrew_installed_packages:
   # - openshift-cli
 
 homebrew_cask_apps:
-  - firefox
-  - google-chrome
-  - google-drive
+  # - firefox
+  # - google-chrome
+  # - google-drive
   - bitwarden
-  - vlc
-  - steam
+  # - vlc
+  # - steam
   - iterm2
   - visual-studio-code
   - spotify
   - postman
   - balenaetcher
   - opencode-desktop
+  - obs
   # nerd-font packages for starship
   - font-roboto-mono-nerd-font
   - font-jetbrains-mono-nerd-font
