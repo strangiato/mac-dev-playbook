@@ -110,10 +110,10 @@ vscode_extension:
   - ms-python.python
   - ms-python.vscode-pylance
   - streetsidesoftware.code-spell-checker
-  - esbenp.prettier-vscode
-  - hediet.vscode-drawio
+  # - esbenp.prettier-vscode
+  # - hediet.vscode-drawio
 
 post_provision_tasks:
-  # - tasks/vscode-extensions.yml
+  - tasks/vscode-extensions.yml
   # - tasks/default-python.yml
   # - tasks/create-sshkey.yml
